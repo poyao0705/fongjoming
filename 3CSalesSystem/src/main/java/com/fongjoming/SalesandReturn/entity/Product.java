@@ -1,11 +1,15 @@
 package com.fongjoming.SalesandReturn.entity;
 
+import java.sql.Date;
+
 public class Product {
     private long id;
     private int category;
     private String desc;
     private int inventory;
     private int reorderPoint;
+    private String name;
+    private Date productReleaseTime;
 
     /* getters and setters */
     public long getId(){
@@ -42,6 +46,19 @@ public class Product {
     public void setReorderPoint(int reorderPoint){
 		this.reorderPoint = reorderPoint;
     }
+	public String getName() {
+		return name;
+	}
+	public void setName(String name) {
+		this.name = name;
+	}
+	public Date getProductReleaseTime() {
+		return productReleaseTime;
+	}
+	public void setProductReleaseTime(Date productReleaseTime) {
+		this.productReleaseTime = productReleaseTime;
+	}
+    
 
     /*
     public Object get(int attr){
